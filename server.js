@@ -7,8 +7,8 @@ var mysql = require('mysql');
 
  var connection = mysql.createConnection({
   host     : process.env.OPENSHIFT_MYSQL_DB_HOST || 'db4free.net',
-  user     : process.env.OPENSHIFT_MYSQL_DB_USERNAME || 'prosandcons',
-  password : process.env.OPENSHIFT_MYSQL_DB_PASSWORD || 'consandpros',
+  user     : process.env.OPENSHIFT_MYSQL_DB_USERNAME || '(redacted)',
+  password : process.env.OPENSHIFT_MYSQL_DB_PASSWORD || '(redacted)',
   port     : process.env.OPENSHIFT_MYSQL_DB_PORT,
   database : 'prosandcons'
  });
