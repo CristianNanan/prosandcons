@@ -136,23 +136,15 @@ function notifier(thecomments){
 
 		if(comments[0][x].type=="Pro"){
 
-if (argo / diso >=20){colorize="bg-emeraldxtr fg-yellow";}
-else if (argo / diso >=10){colorize="bg-emeraldxtr fg-white";}
-else if (argo / diso >=5){colorize="bg-emerald fg-white";}
-else if (argo / diso >=2.5){colorize="bg-emeraldlar fg-white";}
-else if (argo / diso >=1.25){colorize="bg-emeraldmed fg-white";}
-else if (argo / diso >=0.625){colorize="bg-emeraldsma fg-white";}
+if (argo / diso >=5){colorize="bg-emeraldxtr fg-yellow";}
+else{colorize="bg-emeraldxtr fg-white";}
 
 document.getElementById("prosidex").innerHTML+='<div class="span16"><div class="panel"><div class="panel-header '+colorize+'">'+comments[0][x].title+'<span id="'+comments[0][x].id+'" style="float:right;"></span></div><div class="panel-content">'+comments[0][x].comment+'</div></div><div class="row" style="margin:0px;"><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'agree'"+')" class="span16">Agree <b>('+comments[0][x].agree+')</b></button><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'disagree'"+')" class="span16">Disagree <b>('+comments[0][x].disagree+')</b></button>';
 		}
 		else if(comments[0][x].type=="Con"){
 
-if (argo / diso >=20){colorize="bg-redxtr fg-yellow";}
-else if (argo / diso >=10){colorize="bg-redxtr fg-white";}
-else if (argo / diso >=5){colorize="bg-red fg-white";}
-else if (argo / diso >=2.5){colorize="bg-redlar fg-white";}
-else if (argo / diso >=1.25){colorize="bg-redmed fg-white";}
-else if (argo / diso >=0.625){colorize="bg-redsma fg-white";}
+if (argo / diso >=5){colorize="bg-redxtr fg-yellow";}
+else{colorize="bg-redxtr fg-white";}
 
 document.getElementById("considex").innerHTML+='<div class="span16"><div class="panel"><div class="panel-header '+colorize+'">'+comments[0][x].title+'<span id="'+comments[0][x].id+'" style="float:right;"></span></div><div class="panel-content">'+comments[0][x].comment+'</div></div><div class="row" style="margin:0px;"><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'agree'"+')" class="span16">Agree <b>('+comments[0][x].agree+')</b></button><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'disagree'"+')" class="span16">Disagree <b>('+comments[0][x].disagree+')</b></button>';
 		}
