@@ -137,6 +137,7 @@ function notifier(thecomments){
 		if(comments[0][x].type=="Pro"){
 
 if (argo / diso >=5){colorize="bg-emeraldxtr fg-yellow";}
+else if (argo / diso <0){colorize="bg-emerald fg-white";}
 else{colorize="bg-emeraldxtr fg-white";}
 
 document.getElementById("prosidex").innerHTML+='<div class="span16"><div class="panel"><div class="panel-header '+colorize+'">'+comments[0][x].title+'<span id="'+comments[0][x].id+'" style="float:right;"></span></div><div class="panel-content">'+comments[0][x].comment+'</div></div><div class="row" style="margin:0px;"><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'agree'"+')" class="span16">Agree <b>('+comments[0][x].agree+')</b></button><button id="'+comments[0][x].id+'" onclick="rateit(this,'+"'disagree'"+')" class="span16">Disagree <b>('+comments[0][x].disagree+')</b></button>';
